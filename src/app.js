@@ -32,8 +32,8 @@ app.get('', (req, res) => {
 //about hbs
 app.get('/about', (req, res)=> {
     res.render('about', {
-        title: 'Lalisa Manobal',
-        name:'yg entertainment'
+        title: 'About',
+        name:'LGFAM'
     })
 })
 //help hbs
@@ -41,7 +41,7 @@ app.get('/help', (req, res)=> {
     res.render('help', {
         msg:'How can i help you',
         title: 'help',
-        name: 'yg entertainment'
+        name: 'LGFAM'
 
     })
 })

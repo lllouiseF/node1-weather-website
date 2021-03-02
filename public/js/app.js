@@ -4,6 +4,8 @@ const weatherform = document.querySelector('form')
  const search = document.querySelector('input')
  const messageOne = document.querySelector('#message-1')
  const messageTwo = document.querySelector('#message-2')
+ const message3 = document.querySelector('#humidity')
+
 
  // messageOne.textContent = 'error'
 
@@ -12,9 +14,12 @@ const weatherform = document.querySelector('form')
      event.preventDefault()
 
      const location = search.value
+   
 
-     messageOne.textContent = 'loading'
+     messageOne.textContent = 'loading...'
      messageTwo.textContent = ''
+     message3.textContent = '' 
+
     
 
     
@@ -26,6 +31,8 @@ console.log(data.error)
          }else {
             messageOne.textContent = data.location
             messageTwo.textContent = data.forecast
+            message3.textContent = 'Humidity: ' + data.humidity
+        
             
          }
     

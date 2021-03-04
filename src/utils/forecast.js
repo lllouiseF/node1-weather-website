@@ -12,7 +12,7 @@
 
  }else {
 
-     callback(undefined, 'Weather Description:'  + body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degrees out. It feels like ' + body.current.feelslike + '% chance of rain. The humidity is  ' + body.current.humidity + '%')
+     callback(undefined, 'Weather Description:'  + body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degrees out. It feels like ' + body.current.feelslike + '% chance of rain. The humidity is  ' + body.current.humidity + '%.')
 
 
     }

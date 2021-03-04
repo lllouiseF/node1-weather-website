@@ -1,24 +1,24 @@
 
 
-const weatherform = document.querySelector('form')
+const weatherform = document.querySelector('form')       //define the form into a variable
  const search = document.querySelector('input')
- const messageOne = document.querySelector('#message-1')
+ const messageOne = document.querySelector('#message-1')    //paragraph on index hbs
  const messageTwo = document.querySelector('#message-2')
- const message3 = document.querySelector('#humidity')
+ //const message3 = document.querySelector('#localtime')
 
 
  // messageOne.textContent = 'error'
 
 
- weatherform.addEventListener('submit', (event) => {
-     event.preventDefault()
+ weatherform.addEventListener('submit', (event) => {  //click event buuton form
+     event.preventDefault()                             //prevent ro refresh browser
 
-     const location = search.value
+     const location = search.value     //.value is to extract whatever the value on iput form
    
 
      messageOne.textContent = 'loading...'
      messageTwo.textContent = ''
-     message3.textContent = '' 
+     //message3.textContent = '' 
 
     
 
@@ -31,7 +31,7 @@ console.log(data.error)
          }else {
             messageOne.textContent = data.location
             messageTwo.textContent = data.forecast
-            message3.textContent = 'Humidity: ' + data.humidity
+            //message3.textContent = 'localtime:' + data.localtime
         
             
          }
